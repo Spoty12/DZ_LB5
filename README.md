@@ -23,19 +23,9 @@
 
 ## Блок-схема алгоритма
 
-```mermaid
-flowchart TD
-    A([Начало]) --> B[/Ввод x, y, z/]
-    B --> C["part1 = pow(y, cbrt(fabs(x)))"]
-    C --> D["part2 = pow(cos(y), 3)"]
-    D --> E["part3 = fabs(x - y)"]
-    E --> F["part4 = 1 + pow(sin(z), 2) / sqrt(x + y)"]
-    F --> G["numerator = part2 * part3 * part4"]
-    G --> H["denominator = exp(fabs(x - y)) + x / 2.0"]
-    H --> I["b = part1 + numerator / denominator"]
-    I --> J[/Вывод результата b/]
-    J --> K([Конец])
-```
+![Блок-схема алгоритма](block_scheme.png)
+
+[Открыть блок-схему](block_scheme.png)
 
 ## 2. Реализация программы
 
